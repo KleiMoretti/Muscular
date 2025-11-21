@@ -116,7 +116,6 @@
 
 
 
-        /* ANIMATED TEXT */
         .section1Text {
             margin: 0 0 0 400px;
             padding-top: 400px;
@@ -401,7 +400,7 @@
             let score = 0;
             let total = 11;
 
-            // correct answers
+         
             let answers = {
                 q1: "A",
                 q2: "A",
@@ -416,7 +415,7 @@
                 q11: "A"
             };
 
-            // check each question
+            
             for (let i = 1; i <= total; i++) {
                 let selected = document.querySelector(`input[name="q${i}"]:checked`);
                 if (selected) {
@@ -435,5 +434,6 @@
     </script>
 
 </body>
+
 
 </html>
