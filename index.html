@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Muscular System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero {
+            background-image: url('b2.jpg');
+            background-size: cover;
+            background-position: center top;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            font-size: 80px;
+            line-height: 1.2;
+            font-weight: 700;
+            text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            transform: translateY(-100px);
+            animation: slideUp 1.5s ease-in-out forwards;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-top: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transform: translateY(-520px);
+            animation: slideUp 1.5s ease-in-out 0.3s forwards;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .What-is-muscle {
+            background-color: #ffffffff;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .quiz_container {
+            text-align: center;
+        }
+
+        .text-align-left {
+            text-align: left;
+        }
+
+        .question {
+            text-align: center;
+            /* width: 100%; */
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            width: 500px;
+            background-color: #00ffb3;
+            border: none;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
+
+        .result {
+            background-color: white;
+            box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            margin-left: 810px;
+            margin-bottom: 30px;
+            padding: 10px;
+        }
+
+
+
+        /* ANIMATED TEXT */
+        .section1Text {
+            margin: 0 0 0 400px;
+            padding-top: 400px;
+            opacity: 0;
+            transform: translateY(-50px);
+            animation: slideDown 1.5s ease forwards;
+        }
+
+        .section1-text2-area {
+            width: 700px;
+            font-size: 20px;
+            opacity: 0;
+            transform: translateY(-50px);
+            animation: slideDown 1.5s ease 0.5s forwards;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section1-text1 {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .img-area img {
+            height: 100vh;
+        }
+
+        .video {
+            background-color: #e0e0e0;
+        }
+
+        .quiz {
+            background-color: #d0d0d0;
+        }
+
+        .cursor {
+            cursor: pointer;
+        }
+
+        .Trapezius {
+            z-index: 11;
+            position: absolute;
+            margin: 800px 0px 0px 270px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .Shoulder {
+            z-index: 11;
+            position: absolute;
+            margin: 1100px 0px 0px 100px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .Back {
+            z-index: 11;
+            position: absolute;
+            margin: 1300px 0px 0px 110px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .Triceps {
+            z-index: 11;
+            position: absolute;
+            margin: 1600px 0px 0px 85px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .Biceps {
+            z-index: 11;
+            position: absolute;
+            margin: 1500px 0px 0px 115px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .Forearms {
+            z-index: 11;
+            position: absolute;
+            margin: 2200px 0px 0px 8px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .Chest {
+            z-index: 11;
+            position: absolute;
+            margin: 1300px 0px 0px 1200px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .ABS {
+            z-index: 11;
+            position: absolute;
+            margin: 2300px 0px 0px 1210px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .Quadriceps {
+            z-index: 11;
+            position: absolute;
+            margin: 3500px 0px 0px 110px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        p {
+            color: #555;
+        }
+
+        .Hamstrings {
+            z-index: 11;
+            position: absolute;
+            margin: 4100px 0px 0px 110px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .Calves {
+            z-index: 11;
+            position: absolute;
+            margin: 4700px 0px 0px 110px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero">
+        <h1>Muscular System</h1>
+        <p>Learn about human muscles interactively</p>
+    </section>
+    <section class="What-is-muscle">
+        <div class="section1Text">
+            <div class="text-align-left section1-text1-area">
+                <h1 class="section1-text1">What is Muscular System?</h1>
+            </div>
+            <div class="text-align-left section1-text2-area">
+                <p> The muscular system is a network of muscles in the human body that allows movement, maintains
+                    posture, and produces heat. It works closely with the skeletal system to enable voluntary actions
+                    like walking, running, and lifting objects, as well as involuntary actions such as the beating of
+                    the heart and movement of food through the digestive tract. The muscular system is made up of three
+                    main types of muscles: skeletal muscles (voluntary, attached to bones), cardiac muscle (in the
+                    heart), and smooth muscles (in organs like the stomach and intestines). Overall, it is essential for
+                    body mobility, stability, and overall function. </p>
+            </div>
+        </div>
+        <div class="img-area"> <img src="muscle.webp" alt=""> </div>
+    </section>
+    <section>
+        <div class="img-section2img1">
+            <div class="cursor Trapezius">
+                <p>10. Trapezius -----------------------------------------------------------</p>
+            </div>
+            <div class="cursor Shoulder">
+                <p>6. Shoulder -------------------------------</p>
+            </div>
+            <div class="cursor Back">
+                <p>5. Back --------------</p>
+            </div>
+            <div class="cursor Triceps">
+                <p>7. Triceps --------------</p>
+            </div>
+            <div class="cursor Biceps">
+                <p>8. Biceps --------------</p>
+            </div>
+            <div class="cursor Forearms">
+                <p>9. Forearms --------------</p>
+            </div>
+            <div class="cursor Chest">
+                <p>-------------------------------------------------------- 4. Chest</p>
+            </div>
+            <div class="cursor ABS">
+                <p>--------------------------------------------------------------------------11. ABS</p>
+            </div>
+            <div class="cursor Quadriceps">
+                <p>1. Quadriceps -----------------------------------------</p>
+            </div>
+            <div class="cursor Hamstrings">
+                <p>2. Hamstrings -----------------------------------------</p>
+            </div>
+            <div class="cursor Calves">
+                <p>3. Calves -----------------------------------------</p>
+            </div> <img src="body.jpg" alt="">
+        </div>
+    </section>
+    <section>
+        <h2>Muscular System Identification Quiz</h2>
+
+        <div class="quiz_container">
+            <div class="question">
+                <p><strong>Question 1:</strong> Quadriceps are located at the front of the thigh.</p>
+                <label><input type="radio" name="q1" value="A"> A. True</label>
+                <label><input type="radio" name="q1" value="B"> B. False</label>
+            </div>
+
+            <div class="question">
+                <p><strong>Question 2:</strong> Hamstrings are muscles found at the back of the thigh.</p>
+                <label><input type="radio" name="q2" value="A"> A. True</label>
+                <label><input type="radio" name="q2" value="B"> B. False</label>
+            </div>
+
+            <div class="question">
+                <p><strong>Question 3:</strong> Calves are located on the upper arm.</p>
+                <label><input type="radio" name="q3" value="A"> A. True</label>
+                <label><input type="radio" name="q3" value="B"> B. False</label>
+            </div>
+
+            <div class="question">
+                <p><strong>Question 4:</strong> Chest muscles are also called pectorals.</p>
+                <label><input type="radio" name="q4" value="A"> A. True</label>
+                <label><input type="radio" name="q4" value="B"> B. False</label>
+            </div>
+
+            <div class="question">
+                <p><strong>Question 5:</strong> The back muscles include the latissimus dorsi.</p>
+                <label><input type="radio" name="q5" value="A"> A. True</label>
+                <label><input type="radio" name="q5" value="B"> B. False</label>
+            </div>
+
+            <div class="question">
+                <p><strong>Question 6:</strong> Shoulder muscles include the deltoids.</p>
+                <label><input type="radio" name="q6" value="A"> A. True</label>
+                <label><input type="radio" name="q6" value="B"> B. False</label>
+            </div>
+
+            <div class="question">
+                <p><strong>Question 7:</strong> Triceps are found at the front of the upper arm.</p>
+                <label><input type="radio" name="q7" value="A"> A. True</label>
+                <label><input type="radio" name="q7" value="B"> B. False</label>
+            </div>
+
+            <div class="question">
+                <p><strong>Question 8:</strong> Biceps are found at the front of the upper arm.</p>
+                <label><input type="radio" name="q8" value="A"> A. True</label>
+                <label><input type="radio" name="q8" value="B"> B. False</label>
+            </div>
+
+            <div class="question">
+                <p><strong>Question 9:</strong> Forearm muscles help move the wrist and fingers.</p>
+                <label><input type="radio" name="q9" value="A"> A. True</label>
+                <label><input type="radio" name="q9" value="B"> B. False</label>
+            </div>
+
+            <div class="question">
+                <p><strong>Question 10:</strong> Trapezius muscles are found in the neck and upper back.</p>
+                <label><input type="radio" name="q10" value="A"> A. True</label>
+                <label><input type="radio" name="q10" value="B"> B. False</label>
+            </div>
+
+            <div class="question">
+                <p><strong>Question 11:</strong> ABS muscles are located in the stomach area.</p>
+                <label><input type="radio" name="q11" value="A"> A. True</label>
+                <label><input type="radio" name="q11" value="B"> B. False</label>
+            </div>
+            <div id="result" class="result"></div>
+
+            <button onclick="checkAnswers()">Submit</button>
+
+
+        </div>
+    </section>
+
+    <script>
+        function checkAnswers() {
+            let score = 0;
+            let total = 11;
+
+            // correct answers
+            let answers = {
+                q1: "A",
+                q2: "A",
+                q3: "B",
+                q4: "A",
+                q5: "A",
+                q6: "A",
+                q7: "B",
+                q8: "A",
+                q9: "A",
+                q10: "A",
+                q11: "A"
+            };
+
+            // check each question
+            for (let i = 1; i <= total; i++) {
+                let selected = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selected) {
+                    if (selected.value === answers[`q${i}`]) {
+                        score++;
+                        selected.parentElement.style.color = "green";
+                    } else {
+                        selected.parentElement.style.color = "red";
+                    }
+                }
+            }
+
+            document.getElementById("result").innerHTML =
+                `You got ${score} out of ${total} correct.`;
+        }
+    </script>
+
+</body>
+
+</html>

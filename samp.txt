@@ -1,0 +1,24 @@
+<div class="f-text">
+                <h1>
+                    What is Muscular System?
+                </h1>
+            </div>
+            <div class="p-text">
+                <p>The muscular system is a network of muscles in the human body that allows movement, maintains
+                    posture,
+                    and
+                    produces heat. It works closely with the skeletal system to enable voluntary actions like walking,
+                    running,
+                    and lifting objects, as well as involuntary actions such as the beating of the heart and movement of
+                    food
+                    through the digestive tract. The muscular system is made up of three main types of muscles: skeletal
+                    muscles
+                    (voluntary, attached to bones), cardiac muscle (in the heart), and smooth muscles (in organs like
+                    the
+                    stomach and intestines). Overall, it is essential for body mobility, stability, and overall
+                    function.
+                </p>
+            </div>
+            <div class="What-is-muscle-image-area">
+                <img src="muscle.webp" alt="">
+            </div>
